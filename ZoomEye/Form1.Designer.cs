@@ -60,6 +60,7 @@ namespace ZoomEye
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtProxy = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -82,9 +83,10 @@ namespace ZoomEye
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(697, 13);
+            this.label3.Location = new System.Drawing.Point(820, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.Size = new System.Drawing.Size(86, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "SearchPage:";
             // 
@@ -112,30 +114,32 @@ namespace ZoomEye
             "800",
             "900",
             "1000"});
-            this.cboSearchPage.Location = new System.Drawing.Point(766, 9);
+            this.cboSearchPage.Location = new System.Drawing.Point(912, 8);
+            this.cboSearchPage.Margin = new System.Windows.Forms.Padding(4);
             this.cboSearchPage.Name = "cboSearchPage";
-            this.cboSearchPage.Size = new System.Drawing.Size(81, 21);
+            this.cboSearchPage.Size = new System.Drawing.Size(107, 24);
             this.cboSearchPage.TabIndex = 6;
             // 
             // cboType
             // 
-            this.cboType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.FormattingEnabled = true;
             this.cboType.Items.AddRange(new object[] {
             "HOST",
             "WEB"});
-            this.cboType.Location = new System.Drawing.Point(583, 9);
+            this.cboType.Location = new System.Drawing.Point(810, 8);
+            this.cboType.Margin = new System.Windows.Forms.Padding(4);
             this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(102, 21);
+            this.cboType.Size = new System.Drawing.Size(135, 24);
             this.cboType.TabIndex = 4;
             // 
             // btnSearch
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Location = new System.Drawing.Point(861, 32);
+            this.btnSearch.Location = new System.Drawing.Point(1039, 39);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(153, 21);
+            this.btnSearch.Size = new System.Drawing.Size(204, 26);
             this.btnSearch.TabIndex = 9;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -145,97 +149,105 @@ namespace ZoomEye
             // 
             this.txtKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKey.Location = new System.Drawing.Point(274, 32);
+            this.txtKey.Location = new System.Drawing.Point(365, 38);
+            this.txtKey.Margin = new System.Windows.Forms.Padding(4);
             this.txtKey.Name = "txtKey";
-            this.txtKey.Size = new System.Drawing.Size(411, 20);
+            this.txtKey.Size = new System.Drawing.Size(463, 22);
             this.txtKey.TabIndex = 5;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(547, 13);
+            this.label2.Location = new System.Drawing.Point(762, 13);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Type:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(246, 36);
+            this.label1.Location = new System.Drawing.Point(274, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Key:";
+            this.label1.Text = "Search String:";
             // 
             // contextMenuStrip2
             // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiDetails,
             this.toolStripSeparator1,
             this.tsmiExport});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(110, 54);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(125, 58);
             // 
             // tsmiDetails
             // 
             this.tsmiDetails.Name = "tsmiDetails";
-            this.tsmiDetails.Size = new System.Drawing.Size(109, 22);
+            this.tsmiDetails.Size = new System.Drawing.Size(124, 24);
             this.tsmiDetails.Text = "Details";
             this.tsmiDetails.Click += new System.EventHandler(this.tsmiDetails_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(106, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
             // 
             // tsmiExport
             // 
             this.tsmiExport.Name = "tsmiExport";
-            this.tsmiExport.Size = new System.Drawing.Size(109, 22);
+            this.tsmiExport.Size = new System.Drawing.Size(124, 24);
             this.tsmiExport.Text = "Export";
             this.tsmiExport.Click += new System.EventHandler(this.tsmiExport_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 13);
+            this.label4.Location = new System.Drawing.Point(7, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(39, 16);
             this.label4.TabIndex = 1;
             this.label4.Text = "User:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 36);
+            this.label5.Location = new System.Drawing.Point(7, 44);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.Size = new System.Drawing.Size(41, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Pass:";
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(39, 9);
+            this.txtUser.Location = new System.Drawing.Point(52, 11);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(184, 20);
+            this.txtUser.Size = new System.Drawing.Size(244, 22);
             this.txtUser.TabIndex = 0;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(39, 32);
+            this.txtPass.Location = new System.Drawing.Point(52, 39);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(109, 20);
+            this.txtPass.Size = new System.Drawing.Size(144, 22);
             this.txtPass.TabIndex = 1;
             // 
             // btnResInfo
             // 
             this.btnResInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnResInfo.Location = new System.Drawing.Point(861, 9);
+            this.btnResInfo.Location = new System.Drawing.Point(1039, 9);
+            this.btnResInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnResInfo.Name = "btnResInfo";
-            this.btnResInfo.Size = new System.Drawing.Size(153, 21);
+            this.btnResInfo.Size = new System.Drawing.Size(204, 26);
             this.btnResInfo.TabIndex = 10;
             this.btnResInfo.Text = "Resources Info";
             this.btnResInfo.UseVisualStyleBackColor = true;
@@ -246,6 +258,7 @@ namespace ZoomEye
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -273,26 +286,28 @@ namespace ZoomEye
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lvLog);
-            this.splitContainer1.Size = new System.Drawing.Size(1026, 676);
-            this.splitContainer1.SplitterDistance = 389;
+            this.splitContainer1.Size = new System.Drawing.Size(1890, 832);
+            this.splitContainer1.SplitterDistance = 566;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 7;
             // 
             // txtStartPage
             // 
             this.txtStartPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtStartPage.Location = new System.Drawing.Point(766, 32);
+            this.txtStartPage.Location = new System.Drawing.Point(912, 38);
+            this.txtStartPage.Margin = new System.Windows.Forms.Padding(4);
             this.txtStartPage.Name = "txtStartPage";
-            this.txtStartPage.Size = new System.Drawing.Size(81, 20);
+            this.txtStartPage.Size = new System.Drawing.Size(107, 22);
             this.txtStartPage.TabIndex = 7;
             this.txtStartPage.Text = "1";
             // 
             // chkShowPass
             // 
             this.chkShowPass.AutoSize = true;
-            this.chkShowPass.Location = new System.Drawing.Point(170, 34);
+            this.chkShowPass.Location = new System.Drawing.Point(204, 41);
+            this.chkShowPass.Margin = new System.Windows.Forms.Padding(4);
             this.chkShowPass.Name = "chkShowPass";
-            this.chkShowPass.Size = new System.Drawing.Size(53, 17);
+            this.chkShowPass.Size = new System.Drawing.Size(62, 20);
             this.chkShowPass.TabIndex = 2;
             this.chkShowPass.Text = "Show";
             this.chkShowPass.UseVisualStyleBackColor = true;
@@ -310,14 +325,16 @@ namespace ZoomEye
             this.columnHeader12,
             this.columnHeader8,
             this.columnHeader9,
-            this.columnHeader11});
+            this.columnHeader11,
+            this.columnHeader4});
             this.lvResult.ContextMenuStrip = this.contextMenuStrip2;
             this.lvResult.FullRowSelect = true;
             this.lvResult.HideSelection = false;
-            this.lvResult.Location = new System.Drawing.Point(1, 56);
+            this.lvResult.Location = new System.Drawing.Point(1, 69);
+            this.lvResult.Margin = new System.Windows.Forms.Padding(4);
             this.lvResult.Name = "lvResult";
             this.lvResult.ShowItemToolTips = true;
-            this.lvResult.Size = new System.Drawing.Size(1024, 331);
+            this.lvResult.Size = new System.Drawing.Size(1886, 494);
             this.lvResult.TabIndex = 0;
             this.lvResult.UseCompatibleStateImageBehavior = false;
             this.lvResult.View = System.Windows.Forms.View.Details;
@@ -334,54 +351,65 @@ namespace ZoomEye
             // 
             // columnHeader6
             // 
+            this.columnHeader6.DisplayIndex = 3;
             this.columnHeader6.Text = "Country";
             this.columnHeader6.Width = 129;
             // 
             // columnHeader12
             // 
+            this.columnHeader12.DisplayIndex = 4;
             this.columnHeader12.Text = "Title";
             this.columnHeader12.Width = 215;
             // 
             // columnHeader8
             // 
+            this.columnHeader8.DisplayIndex = 5;
             this.columnHeader8.Text = "System";
             this.columnHeader8.Width = 135;
             // 
             // columnHeader9
             // 
+            this.columnHeader9.DisplayIndex = 6;
             this.columnHeader9.Text = "Site";
             this.columnHeader9.Width = 182;
             // 
             // columnHeader11
             // 
+            this.columnHeader11.DisplayIndex = 7;
             this.columnHeader11.Text = "Server";
             this.columnHeader11.Width = 152;
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.DisplayIndex = 2;
+            this.columnHeader4.Text = "Port";
+            // 
             // txtProxy
             // 
-            this.txtProxy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProxy.Location = new System.Drawing.Point(274, 9);
+            this.txtProxy.Location = new System.Drawing.Point(365, 10);
+            this.txtProxy.Margin = new System.Windows.Forms.Padding(4);
             this.txtProxy.Name = "txtProxy";
-            this.txtProxy.Size = new System.Drawing.Size(267, 20);
+            this.txtProxy.Size = new System.Drawing.Size(389, 22);
             this.txtProxy.TabIndex = 3;
             // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(709, 36);
+            this.label8.Location = new System.Drawing.Point(836, 44);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.Size = new System.Drawing.Size(70, 16);
             this.label8.TabIndex = 6;
             this.label8.Text = "StartPage:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(237, 13);
+            this.label7.Location = new System.Drawing.Point(316, 16);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 13);
+            this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 1;
             this.label7.Text = "Proxy:";
             // 
@@ -395,8 +423,9 @@ namespace ZoomEye
             this.lvLog.FullRowSelect = true;
             this.lvLog.HideSelection = false;
             this.lvLog.Location = new System.Drawing.Point(0, 0);
+            this.lvLog.Margin = new System.Windows.Forms.Padding(4);
             this.lvLog.Name = "lvLog";
-            this.lvLog.Size = new System.Drawing.Size(1026, 286);
+            this.lvLog.Size = new System.Drawing.Size(1890, 265);
             this.lvLog.TabIndex = 0;
             this.lvLog.UseCompatibleStateImageBehavior = false;
             this.lvLog.View = System.Windows.Forms.View.Details;
@@ -418,19 +447,21 @@ namespace ZoomEye
             // statusStrip1
             // 
             this.statusStrip1.AutoSize = false;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 654);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 805);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1026, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1890, 27);
             this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(791, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(1650, 21);
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -438,16 +469,17 @@ namespace ZoomEye
             // 
             this.toolStripStatusLabel2.AutoSize = false;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(220, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(220, 21);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 676);
+            this.ClientSize = new System.Drawing.Size(1890, 832);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ZoomEye 1.0";
@@ -502,6 +534,7 @@ namespace ZoomEye
         private TextBox txtStartPage;
         private Label label8;
         private ToolStripStatusLabel toolStripStatusLabel2;
+        private ColumnHeader columnHeader4;
     }
 }
 

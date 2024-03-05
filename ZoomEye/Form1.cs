@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ZoomEye
 {
-    public partial class Form1 : Form
+        public partial class Form1 : Form
     {
         private bool stop = false;
         private string token = null;
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +41,7 @@ namespace ZoomEye
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             cboType.SelectedIndex = 0;
             cboSearchPage.SelectedIndex = 9;
         }
@@ -193,7 +194,7 @@ namespace ZoomEye
                                     {
                                         ListViewItem item1 = new ListViewItem(lvResult.Items.Count.ToString());
                                         item1.SubItems.AddRange(new string[] {libZoomEye.GetJsonIP(data), libZoomEye.GetJsonCountry(data),
-                                    libZoomEye.GetJsonTitle(data), libZoomEye.GetJsonOS(data), libZoomEye.GetJsonSite(data), libZoomEye.GetJsonServer(data) }); ;
+                                    libZoomEye.GetJsonTitle(data), libZoomEye.GetJsonOS(data), libZoomEye.GetJsonSite(data), libZoomEye.GetJsonServer(data), libZoomEye.GetJsonPort(data) }); ;
                                         item1.Tag = data;
                                         lvResult.Items.Add(item1);
                                     }
