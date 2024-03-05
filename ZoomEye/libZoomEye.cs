@@ -23,12 +23,6 @@ namespace ZoomEye
             return jtoken["portinfo"]["os"].ToString();
         }
 
-        public static string GetJsonPort(JToken jtoken)
-        {
-            return jtoken["portinfo"]["port"].ToString();
-        }
-
-
         public static string GetJsonSite(JToken jtoken)
         {
             return "";
