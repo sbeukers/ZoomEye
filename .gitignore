@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ZoomEye
+/ZoomEye/obj/Debug
+/ZoomEye/bin/Debug
