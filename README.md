@@ -3,10 +3,10 @@ GUI tool
 ![Screenshot](Capture.PNG)
 
 # basic
-vs2019 + net4.5.2 + c#
+vs2022 + net4.8 + c#
 
 # usage
-Proxy:  
+Proxy:  Leave empty
 <pre>
     HTTP://127.0.0.1:8080  
     SOCKS5://127.0.0.1:1080 
