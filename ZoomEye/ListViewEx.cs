@@ -23,7 +23,7 @@ namespace ZoomEye
         public void Export()
         {
             SaveFileDialog SFD = new SaveFileDialog();
-            SFD.Filter = "Text Documents(*.txt)|*.txt|All Files(*.*)|*.*";
+            SFD.Filter = "Comma seperated(*.csv)|*.csv|All Files(*.*)|*.*";
 
             if (SFD.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -33,7 +33,7 @@ namespace ZoomEye
                     ListView.ColumnHeaderCollection columns = Columns;
 
                     foreach (ColumnHeader col in columns)
-                        sw.Write(col.Text + "\t");
+                        sw.Write(col.Text + ";");
 
                     sw.Write("\r\n");
 
@@ -43,10 +43,11 @@ namespace ZoomEye
                         {
                             try
                             {
-                                sw.Write(item.SubItems[i].Text + "\t");
+                                sw.Write(item.SubItems[i].Text + ";");
                             }
                             catch (Exception ex) { }
                         }
+                        sw.Write("rtsp://admin:admin@" + item.SubItems[1].Text + ":" + item.SubItems[7].Text + "/11" + ";");
                         sw.Write("\r\n");
                     }
 
